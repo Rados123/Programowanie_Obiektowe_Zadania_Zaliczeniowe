@@ -21,10 +21,7 @@ class MenuGlowne{
 
 class MenuPomoc {
     void InformacjeOProgramie() {}
-    void tematPomocy() {
-        System.out.println("O Pomocy");
-
-    }
+    void tematPomocy() { System.out.println("O Pomocy"); }
 }
 
 class MenuEdycja {
@@ -34,9 +31,7 @@ class MenuEdycja {
     void usun() {}
     void wklej(){}
     void wytnij() {}
-    void znajdz() {
-        System.out.println("Znajduje");
-    }
+    void znajdz() { System.out.println("Znajduje"); }
 
 }
 class MenuPlik {

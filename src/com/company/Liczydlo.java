@@ -104,9 +104,7 @@ public class Liczydlo extends JFrame implements ActionListener {
             LiczB.setText("");
             Wynik.setText("");
         }
-
     }
-
 
     public  static void main(String[] args) {
         SwingUtilities.invokeLater(Liczydlo::new);
