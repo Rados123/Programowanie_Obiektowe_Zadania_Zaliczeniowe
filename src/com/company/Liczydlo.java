@@ -36,6 +36,8 @@ public class Liczydlo extends JFrame implements ActionListener {
         Wynik = new JTextField("");
         Wynik.setEditable(false);
 
+        //Wersja z siatką 4x2
+        /*
         JPanel p2 = new JPanel(new GridLayout(3,1));
         p2.add(new JLabel("Liczba A:"));
         p2.add(new JLabel("Liczba B:"));
@@ -60,6 +62,30 @@ public class Liczydlo extends JFrame implements ActionListener {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(400,300);
         setVisible(true);
+
+         */
+
+        //Wersja z siatką 6x2
+        JPanel p1 = new JPanel(new GridLayout(6,2,20,5));
+        p1.add(Plus);
+        p1.add(Minus);
+        p1.add(Razy);
+        p1.add(Przez);
+        p1.add(Reszta);
+        p1.add(Czysc);
+        p1.add(new JLabel("Liczba A:"));
+        p1.add(LiczA);
+        p1.add(new JLabel("Liczba B:"));
+        p1.add(LiczB);
+        p1.add(new JLabel("Wynik:"));
+        p1.add(Wynik);
+
+        setContentPane(p1);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setSize(400,300);
+        setVisible(true);
+
+
     }
 
     @Override
